@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+	</head>
+	
+	
+	
+	
+	
+	
+	<body>
+		
+		<header>
+			<!--h1></a href="#"><span class="be">be</span><span class="ruby">ruby</span></a></h1-->
+			<%= image_tag "beruby.png", :alt => "BeRuby", :title => "BeRuby", :class => "logoRuby"%>
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-user fa-stack-1x "></i>
+			<!--img src="descarga.jpg" /-->
+		</header>
+		
+		
+		
+		
+		
+		<nav>
+			<ul class="menu">
+				<li><a href="#" class="inicio">INICIO</a></li>
+				<li><a href="#" class="compras">COMPRAS</a></li>
+				<li><a href="#" class="viajes">VIAJES</a></li>
+				<li><a href="#" class="cupones">CUPONES</a></li>
+				<li><a href="#" class="ofertas">OFERTAS</a></li>
+			</ul>
+			
+			
+			<!--div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="menu">
+				<li><a href="#" class="inicio">INICIO</a></li>
+				<li><a href="#" class="compras">COMPRAS</a></li>
+				<li><a href="#" class="viajes">VIAJES</a></li>
+				<li><a href="#" class="cupones">CUPONES</a></li>
+				<li><a href="#" class="ofertas">OFERTAS</a></li>
+			</ul>
+    </div><!--/.nav-collapse -->
+  <!--/div>
+</div-->
+		</nav>
+		
+		
+		
+		
+		
+		<section>
+			
+			<% 
+			puntos = [0,1,2,3,4,5,6,7,8,9,10]
+			puntos.each do |punto|	
+			%>
+				<article>
+					<div class="col-xs-1 col-lg-1"></div>
+					<div class="estrellasLogo col-xs-11 col-lg-2 ">
+						<% if punto == 0 %>
+							<i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 1%>
+							<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 2%>
+							<i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 3%>
+							<i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 4%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 5%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 6%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 7%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 8%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></br>
+						<%elsif punto == 9%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></br>
+						<%elsif punto == 10%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></br>	
+						<%end%>
+						<h1>LOGO</h1>
+					</div>
+					
+					<div class="texto col-xs-12 col-lg-5">
+						<p class="nombreEmpresa"><h2><!--img src="http://localhost:3000/MaquetacionBeRuby/views/anunciante/icon.png" width=20 height="20"/-->Nombre empresa</h2></p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+					</div>
+					
+					<div class="cashback col-xs-12 col-lg-3" >
+						<br /><br />
+						<span class="big">&lt;6,00%</span><br />
+						<span class="botonCashback"><a href="detalle">MÁS INFORMACIÓN</a> </span><br /><br /><br /><br />
+					</div>
+					
+					<div class=" col-xs-12 col-lg-1 "></div>
+				</article>
+				<article>
+					<div class="col-xs-12 col-lg-12"></div>
+					<div class="col-xs-12 col-lg-1"></div>
+					<div class="linea col-lg-10"></div>
+					<div class="col-xs-12 col-lg-1"></div>
+				</article>
+			<% end%>
+			
+			
+		</section>
+		
+		
+		
+		
+		
+		
+		<footer>
+			
+				
+			<!--div class="col-lg-1 contenidoFooter"></div-->
+			
+			<div class="col-lg-4 redesSociales contenidoFooter">
+				<ul class="listaFooter">
+					<li class="titFooter">Comunidad </li>
+					<li><a href="http://es.beruby.com/blog">Nuestro Blog</a></li>
+					<li><a href="http://es.beruby.com/forums/disabled">Foro	</a></li>
+					<li>
+						<a href="https://twitter.com/beruby_es"><i class="fa fa-twitter fa-2x icono"></i></a>
+						<a href="https://www.facebook.com/#!/pages/BeRuby-Espana/119627681383376?ref=ts"><i class="fa fa-facebook-square fa-2x icono"></i></a>
+						<a href="https://www.youtube.com/user/BeRubyFamily"><i class="fa fa-youtube fa-2x icono"></i></a>
+						<a href="https://plus.google.com/u/0/+beruby/posts"><i class="fa fa-google-plus-square fa-2x icono"></i></a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--!div class="col-lg-2 contenidoFooter"></div-->
+			
+			<div class="col-lg-4 contenidoFooter ">
+				<ul class="listaFooter">
+					<li class="titFooter">Sobre beruby</li>
+					<li><a href="http://es.beruby.com/portal/about">Quiénes somos </a></li>				
+					<li><a href="http://es.beruby.com/web/terms-and-conditions">Condiciones legales</a></li>
+					<li><a href="http://es.beruby.com/web/privacy-policy">Política de privacidad</a></li>
+					<li><a href="http://es.beruby.com/web/cookies_more_info">Información dobre cookies</a></li>
+					<li><a href="http://es.beruby.com/web/beruby-cashback">Extensión Chrome y Mozilla</a></li>
+					<li><a href="http://es.beruby.com/web/beruby-cashback">Firefox</a></li>
+					<li><a href="http://es.beruby.com/web/press">Prensa</a></li>
+				</ul>
+			</div>
+			
+			<!--div class="col-lg-2 contenidoFooter"></div-->
+			
+			<div class="col-lg-4 contenidoFooter">
+				<ul class="listaFooter">
+					<li class="titFooter">Ayuda</li>
+					<li><a href="http://es.beruby.com/web/what-is-beruby">¿Qué es beruby? </a></li>				
+					<li><a href="http://es.beruby.com/portal/advertise">Anunciarse en beruby</a></li>
+					<li><a href="http://es.beruby.com/web/faq">Preguntas frecuentes </a></li>
+					<li><a href="http://es.beruby.com/user_requests/new?value=cc">Contacta con nosotros </a></li>
+					<li><a href="http://es.beruby.com/users/webmaster">Invita a un amigo</a></li>
+					<li>
+						<a href="https://itunes.apple.com/es/app/beruby/id505435432?mt=8"><i class="fa fa-mobile fa-2x icono"></i> Descargar para iPhone</a><br />
+						<a href="https://play.google.com/store/apps/details?id=com.rhomobile.beruby&hl=es"><i class="fa fa-android fa-2x icono"></i> Descarga para Android</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--div class="col-lg-1 contenidoFooter"></div-->
+			
+			
+			
+			
+		</footer>
+		
+		
+	</body>
+	
+	
+	
+	
+</html>

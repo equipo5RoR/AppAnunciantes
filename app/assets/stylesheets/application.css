@@ -1,0 +1,378 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+
+
+@screen-xs-max: 767px;
+@screen-sm-min: 768px;
+@screen-sm-max: 991px;
+@screen-md-min: 992px;
+@screen-md-max: 1199px;
+@screen-lg-min: 1200px;
+
+@media (min-width: @screen-sm-min) { 
+	
+ }
+ 
+ @media (min-width: @screen-md-min) { 
+ 	
+ }
+ 
+ @media (min-height: @screen-lg-min) { 
+ 	
+ }
+
+
+
+
+/*Contenido del header*/
+header{
+	background-color: #404951;
+	height: 4%;
+	padding-left: 10%;
+	
+}
+
+.logoRuby{
+	padding-top: 3%;
+	padding-bottom: 1%;
+	width: 12%;
+}
+
+
+
+
+/*icono usuario*/
+.fa-user, .fa-circle{
+	padding-top: 4%;
+    padding-left: 77%;
+}
+
+.fa-circle{
+	color: white;
+}
+
+.fa-user{
+	color: #999;
+}
+
+
+
+
+/*Contenido del nav - menú*/
+nav{
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #d7dde2;
+}
+
+ul.menu {
+  background: #f1f1f1;
+  /*border: 1px solid #d7dde2;*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ul.menu li a {
+  color: #333;
+  font-weight: bold;
+  display: block;
+  padding: 7%;
+  text-decoration: none;
+  border-left: 1px solid #d7dde2;
+  /*border-right: 1px solid #d7dde2;*/
+  font-size: 1.38em;
+}
+
+ul.menu li {
+  float: left;
+  width: 20%;
+}
+
+a.inicio:hover{
+	color: #d04b41;
+}
+
+a.compras:hover{
+	color: #00b3cc;
+}
+
+a.viajes:hover{
+	color: #ffa400 ;
+}
+
+a.cupones:hover{
+	color: #9e69af ;
+}
+
+a.ofertas:hover{
+	color: #8eb300;
+}
+
+a.ofertas{
+	border-right: 1px solid #d7dde2;
+}
+
+
+
+
+
+/*Contenido del body*/
+body{
+	margin-top: -1.5%;
+	font-family: Arial,Sans-serif;
+}
+
+.fa-star, .fa-star-half-o, .fa-star-o{
+	/*color: #FF8C00;*/
+	color: #DAA520;
+}
+
+.estrellasLogo{
+	float: left;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.texto{
+	float: left;
+	/*width: 60%;*/
+	/*padding-left: 5%;*/
+}
+
+.nombreEmpresa{
+	padding: none;
+}
+
+.big {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.cashback{
+	color: #00b3cc;
+	padding-left: 5%;
+	float: left;
+	text-align: center;
+}
+
+.botonCashback{
+	border-radius: 3px;
+    font-size: 1em;
+    line-height: 1.53846em;
+    font-weight: bold;
+    background: #00b3cc;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #00b3cc;
+    min-width: 120px;
+    text-shadow: none;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.linea{
+	border-bottom: 1px solid #d7dde2;
+}
+
+/*Contenido del footer*/
+footer{
+	background-color: #404951;
+	clear: both;
+	height: 50%;
+}
+
+.contenidoFooter{
+	background-color: #404951;
+	color: white;
+	height: 350px;
+}
+
+.contenidoPaises{
+	background-color: #404951;
+	color: white;
+	height: 150px;
+}
+
+.icono{
+	color: white;
+}
+
+ul.listaFooter{
+	list-style: none;
+	color: #fff;
+	margin-top: 12%;
+}
+
+.titFooter{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+
+
+/*Paginación*/
+.pagination a{
+	color: #505050;
+}
+ .paginacion{
+ 	font-size: 20px;
+ 	text-align: center;
+ }
+ 
+ .current{
+ 	background-color: #00B3CC;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 50%;
+ }
+ 
+
+
+
+/*Anunciante*/
+/*Logo anunciantes*/
+.logoEmpresa{
+	border-radius: 50%;
+}
+
+.detalle p, .detalle h2{
+	color: black;
+}
+
+
+
+
+
+/*Detalles*/
+.recuadro{
+	border: 1px solid #d7dde2;
+	padding: 1%;
+	border-radius: 8px;
+	margin-bottom: 2%;
+}
+
+.iconoRec{
+	color: #d7dde2;
+}
+
+.textoRec{
+	color: #505050;
+}
+
+.iconoDone{
+	color: #99CC99;
+}
+
+.recuadroVerde{
+	border: 1px solid #99CC99;
+	padding: 1%;
+	border-radius: 8px;
+	margin-bottom: 2%;
+}
+
+.iconoRecVerde{
+	color: #99CC99;
+}
+
+.datoReclamacion{
+	color: #00b3cc;
+}
+
+
+
+
+
+/*FOOTER*/ 
+div{
+	display: block;
+}
+
+.wrapper-footer{
+	margin-bottom: -20px
+}
+
+
+footer{
+	
+	color: white;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	background-color: #404951;
+}
+
+.container{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
+.row{
+	margin-left: -30px;
+}
+
+.span4{
+	width:  370px;
+	float:left;
+	min-height: 1px;
+}
+
+ul{
+	list-style: none;
+}
+
+.head-footer{
+	font-size: 18px;
+    line-height: 2em;
+    padding: 10px;
+}
+
+.foot-copy{
+	margin-top: 20px;
+	text-align: center;
+	color: #d7dde2;
+}
+ div{
+	display: block;
+}
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CalidadAnunciantes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"-->
+  <link rel="shortcut icon" href="/favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon2.ico" type="image/x-icon">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<%= image_tag "beruby.png", :alt => "BeRuby", :title => "BeRuby", :class => "logoRuby"%>
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<i class="fa fa-user fa-stack-1x "></i>
+	</header>
+	
+	<nav>
+		<ul class="menu">
+			<li><a href="#" class="inicio">INICIO</a></li>
+			<li><a href="#" class="compras">COMPRAS</a></li>
+			<li><a href="#" class="viajes">VIAJES</a></li>
+			<li><a href="#" class="cupones">CUPONES</a></li>
+			<li><a href="#" class="ofertas">OFERTAS</a></li>
+		</ul>
+			
+			
+			<!--div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="menu">
+				<li><a href="#" class="inicio">INICIO</a></li>
+				<li><a href="#" class="compras">COMPRAS</a></li>
+				<li><a href="#" class="viajes">VIAJES</a></li>
+				<li><a href="#" class="cupones">CUPONES</a></li>
+				<li><a href="#" class="ofertas">OFERTAS</a></li>
+			</ul>
+    </div><!--/.nav-collapse -->
+  <!--/div>
+</div-->
+	</nav>
+
+<%= yield %>
+
+
+<footer>
+	<div class="wrapper-footer">
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="span4">			
+						<ul>
+							<li class="head-footer">Comunidad </li>
+							<li><a href="http://es.beruby.com/blog">Nuestro Blog</a></li>
+							<li><a href="http://es.beruby.com/forums/disabled">Foro	</a></li>
+							<li>
+								<a href="https://twitter.com/beruby_es"><i class="fa fa-twitter fa-2x icono"></i></a>
+								<a href="https://www.facebook.com/#!/pages/BeRuby-Espana/119627681383376?ref=ts"><i class="fa fa-facebook-square fa-2x icono"></i></a>
+								<a href="https://www.youtube.com/user/BeRubyFamily"><i class="fa fa-youtube fa-2x icono"></i></a>
+								<a href="https://plus.google.com/u/0/+beruby/posts"><i class="fa fa-google-plus-square fa-2x icono"></i></a>
+							</li>
+						</ul>
+					</div>	
+					<div class="span4">	
+						<ul>
+							<li class="head-footer">Sobre beruby</li>
+							<li><a href="http://es.beruby.com/portal/about">Quiénes somos </a></li>				
+							<li><a href="http://es.beruby.com/web/terms-and-conditions">Condiciones legales</a></li>
+							<li><a href="http://es.beruby.com/web/privacy-policy">Política de privacidad</a></li>
+							<li><a href="http://es.beruby.com/web/cookies_more_info">Información dobre cookies</a></li>
+							<li><a href="http://es.beruby.com/web/beruby-cashback">Extensión Chrome y Mozilla</a></li>
+							<li><a href="http://es.beruby.com/web/beruby-cashback">Firefox</a></li>
+							<li><a href="http://es.beruby.com/web/press">Prensa</a></li>
+						</ul>
+					</div>
+					<div class="span4">	
+						<ul>
+							<li class="head-footer">Ayuda</li>
+							<li><a href="http://es.beruby.com/web/what-is-beruby">¿Qué es beruby? </a></li>				
+							<li><a href="http://es.beruby.com/portal/advertise">Anunciarse en beruby</a></li>
+							<li><a href="http://es.beruby.com/web/faq">Preguntas frecuentes </a></li>
+							<li><a href="http://es.beruby.com/user_requests/new?value=cc">Contacta con nosotros </a></li>
+							<li><a href="http://es.beruby.com/users/webmaster">Invita a un amigo</a></li>
+							<li>
+								<a href="https://itunes.apple.com/es/app/beruby/id505435432?mt=8"><i class="fa fa-mobile fa-2x icono"></i> Descargar para iPhone</a><br />
+								<a href="https://play.google.com/store/apps/details?id=com.rhomobile.beruby&hl=es"><i class="fa fa-android fa-2x icono"></i> Descarga para Android</a>
+							</li>
+						</ul>
+					</div>
+		   		</div>
+		   		<div class="foot-copy"> © 2016 beruby Beta Version</div>
+			</div>			
+		</div>
+	</div>
+</footer>
+</body>
+</html>

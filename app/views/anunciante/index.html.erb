@@ -1,0 +1,70 @@
+
+<div class="container">
+	<% 
+			@advertisers.each do |advertiser|	
+				num=1+rand(19)
+			%>	
+	<a href="/anunciante/detalle/<%= advertiser.id %>" class="detalle">
+		<section>
+			
+			<article>
+					<div class="row">
+						<div class="estrellasLogo col-xs-12 col-lg-3 ">
+							<% if advertiser.puntuacion == 0 %>
+								<i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 1 %>
+								<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 2 %>
+								<i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 3 %>
+								<i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 4 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 5 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 6 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 7 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 8 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></br>
+							<% elsif advertiser.puntuacion == 9 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></br>
+							<% elsif advertiser.puntuacion == 10 %>
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></br>	
+							<% end %>
+							<h1><%= image_tag "/script_logo/show/#{advertiser.id}", :class => "logoEmpresa"%></h1>
+						</div>
+					
+						<div class="texto col-xs-12 col-lg-6">
+							<p class="nombreEmpresa"><h2><%= advertiser.name%></h2></p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+						</div>
+					
+						<div class="cashback col-xs-12 col-lg-3" >
+							<br /><br />
+							<span class="big">&lt;<%= num %>.00%</span><br />
+							<span class="botonCashback">MÁS INFORMACIÓN</span><br /><br /><br /><br />
+						</div>
+						
+						</div>
+					</article>
+				<article>
+					
+					<div class="linea col-xs-12 col-lg-12"></div>
+					
+				</article>
+			<% end %>
+		</section>
+	</a>
+			
+			<article>
+				<div class="paginacion col-xs-12 col-lg-12">
+					<%= will_paginate(@advertisers) %>
+				</div>
+			</article>
+			
+		
+		
+</div>
+		

@@ -1,0 +1,110 @@
+	
+<div class="container">		
+		
+		<section>
+			
+			<article>
+				<div class="row">
+					
+					<div class="estrellasLogo col-xs-12 col-lg-3 ">
+						<% if @advertiser.puntuacion == 0 %>
+							<i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 1%>
+							<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 2%>
+							<i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 3%>
+							<i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 4%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 5%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 6%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 7%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 8%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></br>
+						<%elsif @advertiser.puntuacion == 9%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></br>
+						<%elsif @advertiser.puntuacion == 10%>
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></br>	
+						<%end%>
+						<h1><%= image_tag "/script_logo/show/#{@advertiser.id}", :class => "logoEmpresa"%></h1>
+					</div>
+					
+					<div class="texto col-xs-12 col-lg-6">
+						<p class="nombreEmpresa"><h2><!--img src="http://localhost:3000/MaquetacionBeRuby/views/anunciante/icon.png" width=20 height="20"/--><Nombre empresa><%= @advertiser.name%></h2></p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+						</p>
+						
+					</div>
+					
+					<div class="cashback col-xs-12 col-lg-3" >
+						<br /><br />
+						<span class="big">&lt;6,00%</span><br />
+						<span class="botonCashback">VISITAR </span><br /><br /><br /><br />
+					</div>
+				</div>
+			</article>
+				
+				<article>
+				<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-xs-12 col-lg-6 recuadro">
+						<div class="col-xs-2 col-lg-2"><i class="fa fa-calendar fa-2x iconoRec"></i></div>
+						<div class="col-xs-7 col-lg-7 textoRec">Último reembolso</div>
+						<div class="col-xs-3 col-lg-3 datoReclamacion">1 día</div>
+					</div>
+					<div class="col-lg-3"></div>
+					<div class=" col-xs-12 col-lg-12 "></div>
+					</div>
+				</article>
+				
+				<article>
+					<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-xs-12 col-lg-6 recuadro">
+						<div class="col-xs-2 col-lg-2"><i class="fa fa-credit-card fa-2x iconoRec"></i></div>
+						<div class="col-xs-8 col-lg-7 textoRec">Último pago</div>
+						<div class="col-xs-2 col-lg-3 datoReclamacion">31 Octubre 2015</div>
+					</div>
+					<div class="col-lg-3"></div>
+					<div class=" col-xs-12 col-lg-12 "></div>
+					</div>
+				</article>
+				
+				<article>
+					<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-xs-12 col-lg-6 recuadro">
+						<div class="col-xs-2 col-lg-2"><i class="fa fa-envelope-o fa-2x iconoRec"></i></div>
+						<div class="col-xs-8 col-lg-7 textoRec">Admite reclamaciones</div>
+						<div class="col-xs-2 col-lg-3 datoReclamacion"><i class="fa fa-check-circle-o fa-2x iconoDone"></i></div>
+					</div>
+					<div class="col-lg-3"></div>
+					<div class=" col-xs-12 col-lg-12 "></div>
+					</div>
+				</article>
+				
+				<article>
+					<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-xs-12 col-lg-6 recuadroVerde">
+						<div class="col-xs-2 col-lg-2"><i class="fa fa-clock-o fa-2x iconoRecVerde"></i></div>
+						<div class="col-xs-8 col-lg-7 textoRec">Días para reclamar: 30</div>
+						<div class="col-xs-2 col-lg-3 datoReclamacion"></div>
+					</div>
+					<div class="col-lg-3"></div>
+					<div class=" col-xs-12 col-lg-12 "></div>
+					</div>
+				</article>
+				
+			
+			
+			
+				
+		</section>
+		
+</div>
